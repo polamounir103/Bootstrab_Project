@@ -13,7 +13,7 @@
 </head>
 <body>
 <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed; z-index: 150; width: 100%;">
      <div class="container-fluid">
       <a class="navbar-brand fw-bolder fs-2 ms-5" href="#">DooN</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -97,55 +97,58 @@
    </nav>
    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
     <!-- >>>>>>>>> Main Section <<<<<<<<<<<<<<<<<<  -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" >
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <div class="" style="">
+
+      <div id="carouselExampleCaptions" class="carousel slide position-relative" data-bs-ride="carousel" >
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+  
+          <div class="carousel-item active" >
+            <img src="imges/c1.jpg" class="d-block w-100" alt="..." >
+            
+            <div class="carousel-caption  position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center" style="background-color: rgba(32, 33, 33, 0.172);">
+              <h5>First slide label</h5>
+              <p class="text-dark">Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+  
+          <div class="carousel-item" >
+            <img src="imges/c2.jpg" class="d-block w-100" alt="..." >
+            <div class="carousel-caption  d-block bg-primary">
+              <h5>Second slide label</h5>
+              <p class="text-dark">Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" >
+            <img src="imges/c3.jpg" class="d-block w-100" alt="..." >
+            <div class="carousel-caption d-block bg-primary">
+              <h5>Third slide label</h5>
+              <p class="text-dark">Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" >
+            <img src="imges/c4.jpg" class="d-block w-100" alt="..." >
+            <div class="carousel-caption d-block bg-primary">
+              <h5>Third slide label</h5>
+              <p class="text-dark">Some representative placeholder content for the fourth slide.</p>
+            </div>
+          </div>
+  
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <div class="carousel-inner">
-
-        <div class="carousel-item active" style="min-height: 600px; max-height: 650px;">
-          <img src="imges/1.png" class="d-block w-100" alt="..." style="min-height: 600px; max-height: 650px;">
-          
-          <div class="carousel-caption  d-block bg-primary">
-            <h5>First slide label</h5>
-            <p class="text-dark">Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-
-        <div class="carousel-item" style="min-height: 600px; max-height: 650px;">
-          <img src="imges/2.png" class="d-block w-100" alt="..." >
-          <div class="carousel-caption  d-block bg-primary">
-            <h5>Second slide label</h5>
-            <p class="text-dark">Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item" style="height: 650px;">
-          <img src="imges/1.png" class="d-block w-100" alt="..." style="min-height: 600px; max-height: 650px;">
-          <div class="carousel-caption d-block bg-primary">
-            <h5>Third slide label</h5>
-            <p class="text-dark">Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item" style="min-height: 600px; max-height: 650px;">
-          <img src="imges/2.png" class="d-block w-100" alt="..." style="min-height: 600px; max-height: 650px;">
-          <div class="carousel-caption d-block bg-primary">
-            <h5>Third slide label</h5>
-            <p class="text-dark">Some representative placeholder content for the fourth slide.</p>
-          </div>
-        </div>
-
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
     <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
     <!-- >>>>>>>>>>>>> 2nd <<<<<<<<<<<<<<<< -->
@@ -164,41 +167,35 @@
         Popular Destinations
       </div>
     
-      <div class="accordion" id="accordionExample">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
               Accordion Item #1
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
               Accordion Item #2
             </button>
           </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
               Accordion Item #3
             </button>
           </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
           </div>
         </div>
       </div>
@@ -291,7 +288,7 @@
         Popular Destinations In Egypt
       </div>
       <div class="container-fluid">
-        <div class="d-flex flex-wrap justify-content-evenly px-lg-5 mt-5 list bg-light card-container">
+        <div class="d-flex flex-column flex-lg-row flex-wrap align-items-center justify-content-evenly px-lg-5 mt-5 list bg-light card-container">
         
           <div class="card mt-4 shadow-lg" style="width: 22rem;">
             <img src="imges/a.jpg" class="card-img-top" alt="...">
@@ -380,7 +377,7 @@
           Popular Destinations In Egypt
         </div>
         <div class="container pb-5">
-          <div class="row justify-content-evenly px-lg-5 mt-5 list  card-container">
+          <div class="d-flex  flex-column flex-lg-row align-items-center justify-content-evenly px-lg-5 mt-5 list  card-container">
           
             <div class="card mt-4 shadow position-relative p-0" style="width: 20rem;">
               <img src="imges/a.jpg" class="card-img-top w-100" alt="...">
@@ -551,7 +548,7 @@
       <!-- >>>>>>>>>>>>> 10th <<<<<<<<<<<<<<<< -->
       <section>
         <div class="container mt-4 pt-2">
-          <div class="container d-flex flex-column flex-md-row flex-wrap flex-md-nowrap justify-content-center  justify-content-md-between  align-items-center   align-items-md-between  mt-5 list bg-light card-container mb-5">
+          <div class="container d-flex flex-column flex-md-row flex-wrap flex-md-nowrap justify-content-center  justify-content-sm-between  align-items-center   align-items-md-between  mt-5 list bg-light card-container mb-5">
           
             <div class="card" style="width: 15rem;">
               <div class="card-body d-flex flex-column align-items-center">

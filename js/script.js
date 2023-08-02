@@ -1,33 +1,24 @@
-
-    // var copyBtn = document.querySelectorAll("#copy-btn")
-    // // var copyPopup =document.querySelectorAll("#copy-popup")
-    // // function hover(){
-    // //     copyPopup.innerHTML="Press To Copy"
-    // //     copyPopup.style.display= "block"
-
-    // // }
-    // function press(){
-    //     // copyPopup.innerHTML="Copied"
-    //     alert("text copied")
-
-    // }
-    // copyBtn.addEventListener(onclick , press)
-    // // function hide(){
-    // //     copyPopup.innerHTML=""
-    // //     copyPopup.style.display= "none"
-
-
-    // // }
-
-    // // copyBtn.onmouseenter= hover
-    // // copyBtn.onclick = press
-    // // copyBtn.onmouseleave = hide
-
-
-
-
-    function coping(){
+ function coping(){
         alert("Text Copied")
     }
 
 
+var menuBtn = document.getElementById("menu-btn")
+var menuBtnClose = document.getElementById("menu-btn-close")
+var sideMenu = document.querySelector("#side-menu")
+
+function showMenu(){
+    menuBtnClose.style.display="block"
+    menuBtn.style.display="none"
+    sideMenu.style.display="block"
+    console.log("show")
+}
+function hideMenu(){
+    menuBtnClose.style.display="none"
+    menuBtn.style.display= "block"
+    sideMenu.style.display="none "
+    console.log("hide")
+}
+
+menuBtn.onclick=showMenu
+menuBtnClose.onclick = hideMenu

@@ -7,20 +7,21 @@
 body {
    
 }
+#menu-btn {
+    opacity: 0.1;
+}
+#menu-btn:hover {
+    opacity: 1;
+}
 #menu-btn-close {
     display: none;
 }
 #side-menu {
    display: none;
-   width: 100px;
-   height: 220px;
    position: fixed;
-   top: 50%;
-   right: 50px; 
-   z-index: 3; 
+   z-index: 11; 
    transform: translate(0 ,-50%); 
-   background-color: #c7c1c1;
-   text-align: center;
+   scale: 0;
 }
 button.accordion-button.collapsed {
     background-color: rgb(230, 227, 227);

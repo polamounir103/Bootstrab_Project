@@ -471,7 +471,7 @@
           <p>Breaking News</p>
         </div>
         
-        <div class="d-flex  bg-light flex-column-reverse flex-lg-row  mb-5" >
+        <div class="d-flex  bg-light flex-column-reverse flex-lg-row  mb-5"  id="news-box">
           <div class="container p-5 ">
             <div>
               <h2>News Title</h2>
@@ -479,7 +479,7 @@
                 <i class="fa-regular fa-newspaper"></i> 
                 <span>Mon May 25 2023</span>
               </p>
-              <div class="bg-primary " style="height: 5px; width: 1%;"></div> <!-- line -->
+              <div class="bg-primary " id="news-line" ></div> <!-- line -->
             </div>
             <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eum deleniti illo, ducimus, nihil aliquam totam magnam, voluptates maiores reprehenderit non! Cupiditate, doloribus. Explicabo, molestiae. Veniam aut ex ipsam aperiam molestias praesentium? Itaque deserunt nulla ex, soluta minus debitis qui eos fugiat temporibus quod pariatur in optio excepturi harum provident doloremque dolor ipsum sunt praesentium.</p>
             <div class="d-flex">
@@ -498,7 +498,7 @@
         </div> <!-- container box -->
 <!-- ----------------------------------- -->
 
-        <div class="d-flex  bg-light flex-column flex-lg-row mb-5" >
+        <div class="d-flex  bg-light flex-column flex-lg-row mb-5" id="news-box" >
           <div class="container-fluid  bg-primary news-img" style="clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%); min-height: 300px; max-height: 450px;" id="b">
             <video class="w-100 h-100" controls id="box2" muted>
               <source src="vid/vid1.mp4" type="video/mp4">
@@ -511,7 +511,7 @@
                 <i class="fa-regular fa-newspaper"></i> 
                 <span>Mon May 25 2023</span>
               </p>
-              <div class="bg-primary " style="height: 5px; width: 1%;"></div> <!-- line -->
+              <div class="bg-primary " id="news-line" ></div> <!-- line -->
             </div>
             <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eum deleniti illo, ducimus, nihil aliquam totam magnam, voluptates maiores reprehenderit non! Cupiditate, doloribus. Explicabo, molestiae. Veniam aut ex ipsam aperiam molestias praesentium? Itaque deserunt nulla ex, soluta minus debitis qui eos fugiat temporibus quod pariatur in optio excepturi harum provident doloremque dolor ipsum sunt praesentium.</p>
             <div class="d-flex">
@@ -526,15 +526,15 @@
         </div> <!-- container box -->
         <!-- --------------------------------------- -->
 
-        <div class="d-flex  bg-light flex-column-reverse flex-lg-row mb-5" >
-          <div class="container p-5 ">
-            <div>
+        <div class="d-flex  bg-light flex-column-reverse flex-lg-row mb-5" id="news-box">
+          <div class="container p-5" >
+            <div class="p">
               <h2>News Title</h2>
               <p> 
                 <i class="fa-regular fa-newspaper"></i> 
                 <span>Mon May 25 2023</span>
               </p>
-              <div class="bg-primary " style="height: 5px; width: 1%;"></div> <!-- line -->
+              <div class=" bg-primary" id="news-line"  ></div> <!-- line -->
             </div>
             <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eum deleniti illo, ducimus, nihil aliquam totam magnam, voluptates maiores reprehenderit non! Cupiditate, doloribus. Explicabo, molestiae. Veniam aut ex ipsam aperiam molestias praesentium? Itaque deserunt nulla ex, soluta minus debitis qui eos fugiat temporibus quod pariatur in optio excepturi harum provident doloremque dolor ipsum sunt praesentium.</p>
             <div class="d-flex">
@@ -548,40 +548,39 @@
           </div> <!--  text container -->
 
           <div class="container-fluid  bg-warning news-img" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%); min-height: 300px; max-height: 450px;" id="">
-            <video class="w-100 h-100" controls id="box3" muted>
+            <video class="w-100 h-100" controls id="box3"  muted>
               <source src="vid/vid1.mp4" type="video/mp4">
             </video>
           </div> <!-- img box -->
         </div> <!-- container box -->
 <!-- ----------------------------------- -->
 
-        <div class="d-flex  bg-light flex-column flex-lg-row mb-5" >
-          <div class="container-fluid  bg-dark news-img" style="clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%); min-height: 300px; max-height: 450px;" id="">
-            <video class="w-100 h-100" controls id="box4" muted>
-              <source src="vid/vid1.mp4" type="video/mp4">
-            </video>
-          </div> <!-- img box -->
-          <div class="container p-5 ">
-            <div>
-              <h2>News Title</h2>
-              <p> 
-                <i class="fa-regular fa-newspaper"></i> 
-                <span>Mon May 25 2023</span>
-              </p>
-              <div class="bg-primary " style="height: 5px; width: 1%;"></div> <!-- line -->
-            </div>
-            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eum deleniti illo, ducimus, nihil aliquam totam magnam, voluptates maiores reprehenderit non! Cupiditate, doloribus. Explicabo, molestiae. Veniam aut ex ipsam aperiam molestias praesentium? Itaque deserunt nulla ex, soluta minus debitis qui eos fugiat temporibus quod pariatur in optio excepturi harum provident doloremque dolor ipsum sunt praesentium.</p>
-            <div class="d-flex">
-              <button class="btn btn-primary me-2">play>></button>
-              <button class="btn btn-primary me-2">play>></button>
-              <button class="btn btn-primary me-2"  
-              onclick="changCol('box4' , 'playbtn4' , 'stopbtn4')" id="playbtn4"> play</button>
-              <button class="btn btn-primary" 
-               onclick="stopCol('box4' , 'playbtn4' , 'stopbtn4')"  id="stopbtn4"> Stop</button>
-            </div>
-          </div> <!--  text container -->
-
-        </div> <!-- container box -->
+<div class="d-flex  bg-light flex-column flex-lg-row mb-5" id="news-box" >
+  <div class="container-fluid  bg-primary news-img" style="clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%); min-height: 300px; max-height: 450px; overflow: hidden;" id="b">
+    <video class="w-100 h-100" controls id="box4" muted>
+      <source src="vid/vid1.mp4" type="video/mp4">
+    </video>
+  </div> <!-- img box -->
+  <div class="container p-5 ">
+    <div>
+      <h2>News Title</h2>
+      <p> 
+        <i class="fa-regular fa-newspaper"></i> 
+        <span>Mon May 25 2023</span>
+      </p>
+      <div class="bg-primary " id="news-line" ></div> <!-- line -->
+    </div>
+    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eum deleniti illo, ducimus, nihil aliquam totam magnam, voluptates maiores reprehenderit non! Cupiditate, doloribus. Explicabo, molestiae. Veniam aut ex ipsam aperiam molestias praesentium? Itaque deserunt nulla ex, soluta minus debitis qui eos fugiat temporibus quod pariatur in optio excepturi harum provident doloremque dolor ipsum sunt praesentium.</p>
+    <div class="d-flex">
+      <button class="btn btn-primary me-2">play>></button>
+      <button class="btn btn-primary me-2">play>></button>
+      <button class="btn btn-primary me-2"  
+      onclick="changCol('box4' , 'playbtn4' , 'stopbtn4')" id="playbtn4"> play</button>
+      <button class="btn btn-primary "  
+      onclick="stopCol('box4' , 'playbtn2' , 'stopbtn4')"  id="stopbtn4"> Stop</button>
+    </div>
+  </div> <!--  text container -->
+</div> <!-- container box -->
 
       </section>
       <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->

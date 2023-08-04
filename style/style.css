@@ -82,14 +82,53 @@ button.accordion-button.collapsed {
     .carousel-item img {
         height: 600px !important;
     }
+
+
+    video {
+        transform: scale(0);
+        transition: 1s;
+    }
+
+    #news-box:hover video {
+        transform: scale(1.05);
+    
+    }
+
 }
 
 @media  (min-width: 990px) {
     .news-img {
         width: 35% !important;
-
     }
+    
+    video {
+        scale: 1.5;
+        transition: 1s;
+    }
+
+    #news-box:hover video {
+        scale: 1.7;
+    }
+
+
 }
+
+#news-line {
+    height: 5px;
+    width: 1%;
+    transition: 1s;
+}
+#news-box:hover #news-line {
+    width: 200px ;
+}
+
+/* video {
+    scale: 0;
+    transition: 1s;
+}
+#news-box:hover video {
+    scale: 1;
+} */
 
 #stopbtn1,
 #stopbtn2,

@@ -57,7 +57,7 @@ function changCol(boxId , playBtnId , stopBtnId ) {
     var stopBtnBtn =document.getElementById(stopBtnId)
     // var vidBox = document.getElementById(vidBoxId)
     box.play();
-    box.style.scale="1.5"
+    // box.style.scale="1.5"
 
         // box.style.background = "#000 !important"
     // box.style.display="none"
@@ -74,7 +74,7 @@ function stopCol(boxId , playBtnId , stopBtnId) {
     var playBtn =document.getElementById(playBtnId)
     var stopBtnBtn =document.getElementById(stopBtnId)
     box.pause();
-    box.style.scale="1"
+    // box.style.scale="1"
         // box.style.background = "#000 !important"
     // box.style.display="none"
     console.log("Done")

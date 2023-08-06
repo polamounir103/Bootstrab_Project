@@ -156,40 +156,6 @@ textarea:focus {
 #stopbtn4 {
     display: none;
 }
-/* \\\\\\\\\\\\\\\\\\    link Cards    \\\\\\\\\\\\\\\\\\\\\\ */
-.link-card {
-    border: none !important;
-    transition: 0.5s;
-}
-.link-card:hover {
-    box-shadow: 0 0 10px 2px rgb(52, 86, 113) !important;
-}
-.link-card::after {
-    content: "" ;
-    width: 0%; 
-    height: 0%;
-    clip-path: circle(77.8% at 22% 22%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #00000020;
-    opacity: 0;
-    transition:  cubic-bezier(0.9, 0.8, 0, 0.1) 0.3s;
-}
-.link-card:hover::after {
-    transition: 0.2s;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    opacity: 1;
-    background-color: #e3e1f72e;
-    width: 100%; 
-    height: 100%;
-    /* transform: scale(1); */
-
-}
-
-
-
-/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .carding , .front , .back {
     width: 20rem !important;
     height: 375px !important;
@@ -198,12 +164,12 @@ textarea:focus {
 .carding {
    transform-style:  preserve-3d ;
    transition: ease 2s ;
-
+   
 }
  
  .front {
-    z-index: 5 ;
-    backface-visibility: hidden ;
+     z-index: 5 ;
+     backface-visibility: hidden ;
     transition: 2s;
  }
 
@@ -216,6 +182,39 @@ textarea:focus {
     transform: translate(-5px , 5px);
 }
 
- .back {
+.back {
     transform: rotateY(180deg);
  }
+    /* \\\\\\\\\\\\\\\\\\    link Cards    \\\\\\\\\\\\\\\\\\\\\\ */
+    .link-card {
+        border: none !important;
+        transition: 0.5s;
+    }
+    .link-card:hover {
+        box-shadow: 0 0 10px 2px rgb(52, 86, 113) !important;
+        z-index: 2;
+    }
+    .link-card::after {
+        content: "" ;
+        width: 0%; 
+        height: 0%;
+        clip-path: circle(77.8% at 22% 22%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #00000020;
+        opacity: 0;
+        transition:  cubic-bezier(0.9, 0.8, 0, 0.1) 0.3s;
+    }
+    .link-card:hover::after {
+        transition: 0.2s;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        opacity: 1;
+        background-color: #e3e1f72e;
+        width: 100%; 
+        height: 100%;
+        /* transform: scale(1); */
+    
+    }    
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+    

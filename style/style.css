@@ -8,7 +8,13 @@ body {
     perspective: 600px; 
 }
 
-
+.modal {
+    position: absolute !important; 
+    height: 700px !important;
+    top: 0% !important;
+    left: 0% !important;
+    z-index: 500 !important;
+}
 hr {
     margin: 8px !important ;
     color: rgb(131, 3, 3) !important;   
@@ -166,7 +172,6 @@ textarea:focus {
    transition: ease 2s ;
    
 }
- 
  .front {
      z-index: 5 ;
      backface-visibility: hidden ;
@@ -217,4 +222,3 @@ textarea:focus {
     
     }    
     /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-    

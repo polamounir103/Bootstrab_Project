@@ -13,7 +13,7 @@
 </head>
 <body>
 <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-1  position-sticky top-0 start-0" style="z-index: 10; width: 100%;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-1 position-sticky  sticky-top  top-0 start-0" style="z-index: 10; width: 100%;">
      <div class="container-fluid">
       <a class="navbar-brand fw-bolder fs-2 ms-5" href="#">DooN</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -129,7 +129,7 @@
         <div class="carousel-inner">
   
           <div class="carousel-item active">
-            <img src="imges/c1.jpg" class="d-block w-100" alt="..." style="height: 90vh;" >
+            <img src="imges/main1.jpg" class="d-block w-100" alt="..." style="height: 90vh;" >
              
             <div class="carousel-caption  position-absolute bottom-0 start-0 w-100  " style="background-color: rgba(255, 255, 255, 0.399); height: 30%;">
               <h5>First slide label</h5>
@@ -139,7 +139,7 @@
           </div>
   
           <div class="carousel-item" >
-            <img src="imges/c2.jpg" class="d-block w-100" alt="..." style="height: 90vh;" >
+            <img src="imges/main2.jpg" class="d-block w-100" alt="..." style="height: 90vh;" >
             <div class="carousel-caption  position-absolute bottom-0 start-0 w-100   pb-5" style="background-color: rgba(255, 255, 255, 0.399); height: 30%">
               <h5>Second slide label</h5>
               <p class="text-dark text-nowrap">Some representative >> second slide.</p>
@@ -147,7 +147,7 @@
             </div>
           </div>
           <div class="carousel-item" >
-            <img src="imges/c3.jpg" class="d-block w-100" alt="..." style="height: 90vh;" >
+            <img src="imges/main3.jpg" class="d-block w-100" alt="..." style="height: 90vh;" >
 
             <div class="carousel-caption  position-absolute bottom-0 start-0 w-100 pb-5" style="background-color: rgba(255, 255, 255, 0.399); height: 30%">
               <h5>Third slide label</h5>
@@ -156,7 +156,7 @@
             </div>
           </div>
           <div class="carousel-item" >
-            <img src="imges/c4.jpg" class="d-block w-100" alt="..." style="height: 90vh;" >
+            <img src="imges/main4.jpg" class="d-block w-100" alt="..." style="height: 90vh;" >
             
             <div class="carousel-caption  position-absolute bottom-0 start-0 w-100   pb-5" style="background-color: rgba(255, 255, 255, 0.399); height: 30%;">
              
@@ -314,8 +314,7 @@
 
     <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
     <!-- >>>>>>>>>>>>> 5th <<<<<<<<<<<<<<<< -->
-    <div class="container-fluid empty-container" style="background-image: url(imges/a2.jpeg); min-height: 35vh; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
-      <!-- <div style="height: 200px;"></div> -->
+    <div class="container-fluid empty-container" style="background-image: url(imges/empty1.jpg ); min-height: 35vh; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; filter: blur(3px);">
     </div>
 
 
@@ -324,7 +323,7 @@
       <!-- >>>>>>>>>>>>> 6th <<<<<<<<<<<<<<<< -->
     <section>
       <div class="container-fluid py-5 justify-content-center text-center bg-secondary text-light fs-2 fw-bolder h-50 shadow-lg rounded-bottom-5">
-        Popular Items
+        Popular Items  <i class="fa-solid fa-star"></i>
       </div>
       <div class="container-fluid">
         <div class="d-flex flex-column flex-lg-row flex-wrap align-items-center justify-content-evenly px-lg-5 mt-5 list bg-light card-container pb-5">
@@ -378,7 +377,13 @@
                 <p>
                   um debitis modi fuga cumque corporis nobis maiores quae explicabo eos architecto!
                 </p>
-
+                <div class="cardRate1 mb-2">
+                  <i class="fa-regular fa-star star1" id="star1"  onclick="star1('.cardRate1 .star1' , '.cardRate1 .star2' , '.cardRate1 .star3' , '.cardRate1 .star4' , '.cardRate1 .star5')"></i>
+                  <i class="fa-regular fa-star star2" id="star2"  onclick="star2('.cardRate1 .star1' , '.cardRate1 .star2' , '.cardRate1 .star3' , '.cardRate1 .star4' , '.cardRate1 .star5')"></i>
+                  <i class="fa-regular fa-star star3" id="star3"  onclick="star3('.cardRate1 .star1' , '.cardRate1 .star2' , '.cardRate1 .star3' , '.cardRate1 .star4' , '.cardRate1 .star5')"></i>
+                  <i class="fa-regular fa-star star4" id="star4"  onclick="star4('.cardRate1 .star1' , '.cardRate1 .star2' , '.cardRate1 .star3' , '.cardRate1 .star4' , '.cardRate1 .star5')"></i>
+                  <i class="fa-regular fa-star star5" id="star5"  onclick="star5('.cardRate1 .star1' , '.cardRate1 .star2' , '.cardRate1 .star3' , '.cardRate1 .star4' , '.cardRate1 .star5')"></i>
+                </div>
                 <a href="#" class="btn btn-primary">Add</a>
               </div>     
               <button class="position-absolute top-0 end-0 item-close rounded-3" id="item-close-1" onclick="closeInfoCard('card-item-1', 'item-close-1')">X</button>
@@ -435,7 +440,13 @@
                 <p>
                   um debitis modi fuga cumque corporis nobis maiores quae explicabo eos architecto!
                 </p>
-
+                <div class="cardRate2 mb-2">
+                  <i class="fa-regular fa-star star1" id="star1"  onclick="star1('.cardRate2 .star1' , '.cardRate2 .star2' , '.cardRate2 .star3' , '.cardRate2 .star4' , '.cardRate2 .star5')"></i>
+                  <i class="fa-regular fa-star star2" id="star2"  onclick="star2('.cardRate2 .star1' , '.cardRate2 .star2' , '.cardRate2 .star3' , '.cardRate2 .star4' , '.cardRate2 .star5')"></i>
+                  <i class="fa-regular fa-star star3" id="star3"  onclick="star3('.cardRate2 .star1' , '.cardRate2 .star2' , '.cardRate2 .star3' , '.cardRate2 .star4' , '.cardRate2 .star5')"></i>
+                  <i class="fa-regular fa-star star4" id="star4"  onclick="star4('.cardRate2 .star1' , '.cardRate2 .star2' , '.cardRate2 .star3' , '.cardRate2 .star4' , '.cardRate2 .star5')"></i>
+                  <i class="fa-regular fa-star star5" id="star5"  onclick="star5('.cardRate2 .star1' , '.cardRate2 .star2' , '.cardRate2 .star3' , '.cardRate2 .star4' , '.cardRate2 .star5')"></i>
+                </div>
                 <a href="#" class="btn btn-primary">Add</a>
               </div>     
               <button class="position-absolute top-0 end-0 item-close rounded-3" id="item-close-2" onclick="closeInfoCard('card-item-2', 'item-close-2')">X</button>
@@ -492,7 +503,13 @@
                 <p>
                   um debitis modi fuga cumque corporis nobis maiores quae explicabo eos architecto!
                 </p>
-
+                <div class="cardRate3 mb-2">
+                  <i class="fa-regular fa-star star1" id="star1"  onclick="star1('.cardRate3 .star1' , '.cardRate3 .star2' , '.cardRate3 .star3' , '.cardRate3 .star4' , '.cardRate3 .star5')"></i>
+                  <i class="fa-regular fa-star star2" id="star2"  onclick="star2('.cardRate3 .star1' , '.cardRate3 .star2' , '.cardRate3 .star3' , '.cardRate3 .star4' , '.cardRate3 .star5')"></i>
+                  <i class="fa-regular fa-star star3" id="star3"  onclick="star3('.cardRate3 .star1' , '.cardRate3 .star2' , '.cardRate3 .star3' , '.cardRate3 .star4' , '.cardRate3 .star5')"></i>
+                  <i class="fa-regular fa-star star4" id="star4"  onclick="star4('.cardRate3 .star1' , '.cardRate3 .star2' , '.cardRate3 .star3' , '.cardRate3 .star4' , '.cardRate3 .star5')"></i>
+                  <i class="fa-regular fa-star star5" id="star5"  onclick="star5('.cardRate3 .star1' , '.cardRate3 .star2' , '.cardRate3 .star3' , '.cardRate3 .star4' , '.cardRate3 .star5')"></i>
+                </div>
                 <a href="#" class="btn btn-primary">Add</a>
               </div>     
               <button class="position-absolute top-0 end-0 item-close rounded-3" id="item-close-3" onclick="closeInfoCard('card-item-3', 'item-close-3')">X</button>
@@ -549,7 +566,13 @@
                 <p>
                   um debitis modi fuga cumque corporis nobis maiores quae explicabo eos architecto!
                 </p>
-
+                <div class="cardRate4 mb-2">
+                  <i class="fa-regular fa-star star1" id="star1"  onclick="star1('.cardRate4 .star1' , '.cardRate4 .star2' , '.cardRate4 .star3' , '.cardRate4 .star4' , '.cardRate4 .star5')"></i>
+                  <i class="fa-regular fa-star star2" id="star2"  onclick="star2('.cardRate4 .star1' , '.cardRate4 .star2' , '.cardRate4 .star3' , '.cardRate4 .star4' , '.cardRate4 .star5')"></i>
+                  <i class="fa-regular fa-star star3" id="star3"  onclick="star3('.cardRate4 .star1' , '.cardRate4 .star2' , '.cardRate4 .star3' , '.cardRate4 .star4' , '.cardRate4 .star5')"></i>
+                  <i class="fa-regular fa-star star4" id="star4"  onclick="star4('.cardRate4 .star1' , '.cardRate4 .star2' , '.cardRate4 .star3' , '.cardRate4 .star4' , '.cardRate4 .star5')"></i>
+                  <i class="fa-regular fa-star star5" id="star5"  onclick="star5('.cardRate4 .star1' , '.cardRate4 .star2' , '.cardRate4 .star3' , '.cardRate4 .star4' , '.cardRate4 .star5')"></i>
+                </div>
                 <a href="#" class="btn btn-primary">Add</a>
               </div>     
               <button class="position-absolute top-0 end-0 item-close rounded-3" id="item-close-4" onclick="closeInfoCard('card-item-4', 'item-close-4')">X</button>
@@ -606,7 +629,13 @@
                 <p>
                   um debitis modi fuga cumque corporis nobis maiores quae explicabo eos architecto!
                 </p>
-
+                <div class="cardRate5 mb-2">
+                  <i class="fa-regular fa-star star1" id="star1"  onclick="star1('.cardRate5 .star1' , '.cardRate5 .star2' , '.cardRate5 .star3' , '.cardRate5 .star4' , '.cardRate5 .star5')"></i>
+                  <i class="fa-regular fa-star star2" id="star2"  onclick="star2('.cardRate5 .star1' , '.cardRate5 .star2' , '.cardRate5 .star3' , '.cardRate5 .star4' , '.cardRate5 .star5')"></i>
+                  <i class="fa-regular fa-star star3" id="star3"  onclick="star3('.cardRate5 .star1' , '.cardRate5 .star2' , '.cardRate5 .star3' , '.cardRate5 .star4' , '.cardRate5 .star5')"></i>
+                  <i class="fa-regular fa-star star4" id="star4"  onclick="star4('.cardRate5 .star1' , '.cardRate5 .star2' , '.cardRate5 .star3' , '.cardRate5 .star4' , '.cardRate5 .star5')"></i>
+                  <i class="fa-regular fa-star star5" id="star5"  onclick="star5('.cardRate5 .star1' , '.cardRate5 .star2' , '.cardRate5 .star3' , '.cardRate5 .star4' , '.cardRate5 .star5')"></i>
+                </div>
                 <a href="#" class="btn btn-primary">Add</a>
               </div>     
               <button class="position-absolute top-0 end-0 item-close rounded-3" id="item-close-5" onclick="closeInfoCard('card-item-5', 'item-close-5')">X</button>
@@ -663,7 +692,13 @@
                 <p>
                   um debitis modi fuga cumque corporis nobis maiores quae explicabo eos architecto!
                 </p>
-
+                <div class="cardRate6 mb-2">
+                  <i class="fa-regular fa-star star1" id="star1"  onclick="star1('.cardRate6 .star1' , '.cardRate6 .star2' , '.cardRate6 .star3' , '.cardRate6 .star4' , '.cardRate6 .star5')"></i>
+                  <i class="fa-regular fa-star star2" id="star2"  onclick="star2('.cardRate6 .star1' , '.cardRate6 .star2' , '.cardRate6 .star3' , '.cardRate6 .star4' , '.cardRate6 .star5')"></i>
+                  <i class="fa-regular fa-star star3" id="star3"  onclick="star3('.cardRate6 .star1' , '.cardRate6 .star2' , '.cardRate6 .star3' , '.cardRate6 .star4' , '.cardRate6 .star5')"></i>
+                  <i class="fa-regular fa-star star4" id="star4"  onclick="star4('.cardRate6 .star1' , '.cardRate6 .star2' , '.cardRate6 .star3' , '.cardRate6 .star4' , '.cardRate6 .star5')"></i>
+                  <i class="fa-regular fa-star star5" id="star5"  onclick="star5('.cardRate6 .star1' , '.cardRate6 .star2' , '.cardRate6 .star3' , '.cardRate6 .star4' , '.cardRate6 .star5')"></i>
+                </div>
                 <a href="#" class="btn btn-primary">Add</a>
               </div>     
               <button class="position-absolute top-0 end-0 item-close rounded-3" id="item-close-6" onclick="closeInfoCard('card-item-6', 'item-close-6')">X</button>
@@ -720,7 +755,13 @@
                 <p>
                   um debitis modi fuga cumque corporis nobis maiores quae explicabo eos architecto!
                 </p>
-
+                <div class="cardRate7 mb-2">
+                  <i class="fa-regular fa-star star1" id="star1"  onclick="star1('.cardRate7 .star1' , '.cardRate7 .star2' , '.cardRate7 .star3' , '.cardRate7 .star4' , '.cardRate7 .star5')"></i>
+                  <i class="fa-regular fa-star star2" id="star2"  onclick="star2('.cardRate7 .star1' , '.cardRate7 .star2' , '.cardRate7 .star3' , '.cardRate7 .star4' , '.cardRate7 .star5')"></i>
+                  <i class="fa-regular fa-star star3" id="star3"  onclick="star3('.cardRate7 .star1' , '.cardRate7 .star2' , '.cardRate7 .star3' , '.cardRate7 .star4' , '.cardRate7 .star5')"></i>
+                  <i class="fa-regular fa-star star4" id="star4"  onclick="star4('.cardRate7 .star1' , '.cardRate7 .star2' , '.cardRate7 .star3' , '.cardRate7 .star4' , '.cardRate7 .star5')"></i>
+                  <i class="fa-regular fa-star star5" id="star5"  onclick="star5('.cardRate7 .star1' , '.cardRate7 .star2' , '.cardRate7 .star3' , '.cardRate7 .star4' , '.cardRate7 .star5')"></i>
+                </div>
                 <a href="#" class="btn btn-primary">Add</a>
               </div>     
               <button class="position-absolute top-0 end-0 item-close rounded-3" id="item-close-7" onclick="closeInfoCard('card-item-7', 'item-close-7')">X</button>
@@ -777,7 +818,13 @@
                 <p>
                   um debitis modi fuga cumque corporis nobis maiores quae explicabo eos architecto!
                 </p>
-
+                <div class="cardRate8 mb-2">
+                  <i class="fa-regular fa-star star1" id="star1"  onclick="star1('.cardRate8 .star1' , '.cardRate8 .star2' , '.cardRate8 .star3' , '.cardRate8 .star4' , '.cardRate8 .star5')"></i>
+                  <i class="fa-regular fa-star star2" id="star2"  onclick="star2('.cardRate8 .star1' , '.cardRate8 .star2' , '.cardRate8 .star3' , '.cardRate8 .star4' , '.cardRate8 .star5')"></i>
+                  <i class="fa-regular fa-star star3" id="star3"  onclick="star3('.cardRate8 .star1' , '.cardRate8 .star2' , '.cardRate8 .star3' , '.cardRate8 .star4' , '.cardRate8 .star5')"></i>
+                  <i class="fa-regular fa-star star4" id="star4"  onclick="star4('.cardRate8 .star1' , '.cardRate8 .star2' , '.cardRate8 .star3' , '.cardRate8 .star4' , '.cardRate8 .star5')"></i>
+                  <i class="fa-regular fa-star star5" id="star5"  onclick="star5('.cardRate8 .star1' , '.cardRate8 .star2' , '.cardRate8 .star3' , '.cardRate8 .star4' , '.cardRate8 .star5')"></i>
+                </div>
                 <a href="#" class="btn btn-primary">Add</a>
               </div>     
               <button class="position-absolute top-0 end-0 item-close rounded-3" id="item-close-8" onclick="closeInfoCard('card-item-8', 'item-close-8')">X</button>
@@ -794,7 +841,7 @@
     </section>
    <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
     <!-- >>>>>>>>>>>>> 7th <<<<<<<<<<<<<<<< -->
-    <div class="container-fluid empty-container" style="background-image: url(imges/a2.jpeg); min-height: 35vh; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+    <div class="container-fluid empty-container" style="background-image: url(imges/empty2.jpg); min-height: 35vh; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; filter: blur(3px);">
       <!-- <div style="height: 200px;"></div> -->
     </div>
     <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->

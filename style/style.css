@@ -5,14 +5,17 @@
 }
 
 body {
-   
+    perspective: 600px; 
 }
 
-#formGroupExampleInput:focus , #formGroupExampleInput2:focus {
 
+hr {
+    margin: 8px !important ;
+    color: rgb(131, 3, 3) !important;   
+}
+#formGroupExampleInput:focus , #formGroupExampleInput2:focus {
     box-shadow: none !important;
 }
-
 
 #menu-btn {
     opacity: 0.1;
@@ -31,20 +34,23 @@ body {
    scale: 0;
 }
 button.accordion-button.collapsed {
-    background-color: rgb(230, 227, 227);
+    background-color: rgba(230, 230, 230, 0.702);
     box-shadow: 0;
-    box-shadow: 0 0px 5px 1px #2d2a2a7d  !important;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #c4c4c4 !important;
+    background-color: #dedede !important;
+    box-shadow: 0 0px 10px 1px #00000058  !important;
+    border: none !important;
+    z-index: 3;
 }
 .accordion-button:focus {
-    z-index: 3;
-    border-color: #5b5b5b !important;
+    box-shadow:0 0px 5px 1px #00000058 !important;
+}
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+textarea:focus {
     box-shadow: none !important;
 }
-
 #copy-btn {
     position: relative;
 }
@@ -68,48 +74,69 @@ button.accordion-button.collapsed {
 #copy-btn:active #copied-popup {
     display: block;
 }
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 
+/* //////////////////////////////////////// */
 .news-img-r {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
 }
+
 @media  (max-width: 990px) {
+    .carousel-item img {
+        height: 550px !important;
+    }
+    .empty-container {
+        background-position: -200px;
+    }
+
+    #news-box {
+
+    }
     .news-img {
         background-image: url(../imges/a2.jpeg) !important;
+        /* background-position: 0px -50px; */
+        background-position-y: top;
         background-size: cover !important;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important;
+        height: 200px;
+        max-height: 200px;
+
     }
-    .carousel-item img {
-        height: 600px !important;
+    .news-text{
+        padding: 10px !important;
+
+    }
+    #news-line {
+        margin-bottom: 5px !important;
+        margin-top: -10px !important;
+    }
+    .news-date {
+        font-size: 10px;
     }
 
-
-    video {
-        transform: scale(0);
-        transition: 1s;
-    }
 
     #news-box:hover video {
-        transform: scale(1.05);
-    
+    transform: scale(1);
+
     }
 
-}
 
+}
+/* ***************************************** */
 @media  (min-width: 990px) {
     .news-img {
         width: 35% !important;
-    }
-    
-    video {
-        scale: 1.5;
-        transition: 1s;
+        min-height: 300px; 
+        max-height: 450px;
     }
 
     #news-box:hover video {
         scale: 1.7;
     }
-
+    .news-text {
+        padding: 5em !important;
+    }
 
 }
 
@@ -122,13 +149,6 @@ button.accordion-button.collapsed {
     width: 200px ;
 }
 
-/* video {
-    scale: 0;
-    transition: 1s;
-}
-#news-box:hover video {
-    scale: 1;
-} */
 
 #stopbtn1,
 #stopbtn2,
@@ -136,3 +156,66 @@ button.accordion-button.collapsed {
 #stopbtn4 {
     display: none;
 }
+/* \\\\\\\\\\\\\\\\\\    link Cards    \\\\\\\\\\\\\\\\\\\\\\ */
+.link-card {
+    border: none !important;
+    transition: 0.5s;
+}
+.link-card:hover {
+    box-shadow: 0 0 10px 2px rgb(52, 86, 113) !important;
+}
+.link-card::after {
+    content: "" ;
+    width: 0%; 
+    height: 0%;
+    clip-path: circle(77.8% at 22% 22%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00000020;
+    opacity: 0;
+    transition:  cubic-bezier(0.9, 0.8, 0, 0.1) 0.3s;
+}
+.link-card:hover::after {
+    transition: 0.2s;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    opacity: 1;
+    background-color: #e3e1f72e;
+    width: 100%; 
+    height: 100%;
+    /* transform: scale(1); */
+
+}
+
+
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.carding , .front , .back {
+    width: 20rem !important;
+    height: 375px !important;
+    background-color: rgba(0, 0, 255, 0) !important;
+}
+.carding {
+   transform-style:  preserve-3d ;
+   transition: ease 2s ;
+
+}
+ 
+ .front {
+    z-index: 5 ;
+    backface-visibility: hidden ;
+    transition: 2s;
+ }
+
+.item-close {
+    display: none;
+    padding: 5px 10px;
+    border: none;
+    background-color: rgb(190, 3, 3);
+    color: #fff;
+    transform: translate(-5px , 5px);
+}
+
+ .back {
+    transform: rotateY(180deg);
+ }

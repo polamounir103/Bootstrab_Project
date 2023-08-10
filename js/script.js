@@ -138,13 +138,6 @@ function star5(starId1 ,starId2,starId3 , starId4 , starId5) {
 
 
 
-
-
-
-
-
-
-
 // ||||||||||||||||||||||||||||||||||||||||||||||
 function changCol(boxId , playBtnId , stopBtnId ) {
     var box = document.getElementById(boxId);

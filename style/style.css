@@ -105,7 +105,10 @@ textarea:focus {
     transition: 1s;
 }
 #news-box:hover #news-line {
-    width: 100% ;
+    width: 200px ;
+}
+.news-img {
+    overflow: hidden;
 }
 .news-imege {
     transform: scale(1.1);

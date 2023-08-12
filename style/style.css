@@ -48,6 +48,17 @@ hr {
    backdrop-filter: blur(8px);
    border: 1px solid rgba(255,255,255,0.25);
 }
+
+.menu-icon {
+    font-size: 26px;
+    filter: drop-shadow(0px 0px 5px #2ef5ff);
+    color: #010e55;
+
+}
+.menu-icon:hover {
+    color: #5942ec;
+}
+/* |||||||||||||||||||||||||  Accordion  |||||||||||||||||||||||||||\ */
 button.accordion-button.collapsed {
     background-color: rgba(230, 230, 230, 0.702);
     box-shadow: 0;

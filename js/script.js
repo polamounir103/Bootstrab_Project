@@ -8,9 +8,6 @@ function inputUO(){
     userNameLable.style.display = "none"
     userNameInput.setAttribute("placeholder", "Enter user name");   
 }
-
-
-
 var userPasswordInput = document.querySelector(".user-password-input") 
 var userPasswordLable = document.getElementById("user-password-label")
 function inputP(){
@@ -22,12 +19,7 @@ function inputPO(){
     userPasswordInput.setAttribute("placeholder", "Enter Password");   
 }
 // userNameInput.focus
- 
- function coping(){
-        alert("Text Copied")
-    }
-
-
+ // ====================================================
 var menuBtn = document.getElementById("menu-btn")
 var menuBtnClose = document.getElementById("menu-btn-close")
 var sideMenu = document.querySelector("#side-menu")
@@ -48,6 +40,11 @@ function hideMenu(){
 
 menuBtn.onclick=showMenu
 menuBtnClose.onclick = hideMenu
+// ----------------------------------------------------
+ function coping(){
+        alert("Text Copied")
+    }
+
 // |||||||||||||||||||||||||||||||||||||||||||||||||
 
 function itemInfo(cardItemId , closingId){
@@ -81,7 +78,6 @@ function star1(starId1 ,starId2,starId3 , starId4 , starId5) {
     star3.setAttribute ("data-prefix", "far")
     star4.setAttribute ("data-prefix", "far")
     star5.setAttribute ("data-prefix", "far")
-    // var active = star1.getAttribute("data-prefix")
 
 }
 function star2(starId1 ,starId2,starId3 , starId4 , starId5) {
@@ -139,26 +135,3 @@ function star5(starId1 ,starId2,starId3 , starId4 , starId5) {
 
 
 // ||||||||||||||||||||||||||||||||||||||||||||||
-function changCol(boxId , playBtnId , stopBtnId ) {
-    var box = document.getElementById(boxId);
-    var playBtn =document.getElementById(playBtnId)
-    var stopBtnBtn =document.getElementById(stopBtnId)
-    box.play();
-
-    console.log("Done")
-    stopBtnBtn.style.display = "block"
-    playBtn.style.display = "none"
-
-    
-}
-function stopCol(boxId , playBtnId , stopBtnId) {
-    var box = document.getElementById(boxId);
-    var playBtn =document.getElementById(playBtnId)
-    var stopBtnBtn =document.getElementById(stopBtnId)
-    box.pause();
-
-    console.log("Done")
-    stopBtnBtn.style.display = "none"
-    playBtn.style.display = "block"
-
-}

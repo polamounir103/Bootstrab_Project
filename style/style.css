@@ -6,7 +6,20 @@
 
 body {
     /* perspective: 600px;  */
+    font-family: 'Caudex', serif !important; 
     background: black;
+}
+
+
+
+.dropdown-menu:hover .dropdown-item:not(:hover) {
+    transition: 0.2;
+    filter: blur(0.7px);
+}
+
+.dropdown-item:hover {
+    filter: blur(0px);
+    background-color: #cbfffd !important;
 }
 
 .modal {
@@ -53,14 +66,27 @@ hr {
 }
 
 .menu-icon {
+    display: block;
+    width: 50px !important;
+    padding: 10px 0;
+    /* background-color: #00ffbf; */
     font-size: 26px;
-    color: #010e55;
+    color: #0c0c0c;
     
 }
-.menu-icon:hover {
-    filter: drop-shadow(0px 0px 5px #00ffbf);
-    color: #050029;
+
+#side-menu:hover .menu-icon:not(:hover) {
+    transition: 0.2;
+    filter: blur(0.7px);
+    
 }
+
+.menu-icon:hover {
+    filter: blur(0px);
+    filter: drop-shadow(0px 0px 4px #0022ff);
+    color: #ffffff;
+}
+
 /* |||||||||||||||||||||||||  Accordion  |||||||||||||||||||||||||||\ */
 button.accordion-button.collapsed {
     background-color: rgba(230, 230, 230, 0.702);
@@ -114,35 +140,6 @@ textarea:focus {
     margin-left: -15px;
 }
 
-/* //////////////////////////////////////// */
-.news-img-r {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
-}
-#news-line {
-    height: 5px;
-    width: 1%;
-    transition: 1s;
-}
-#news-box:hover #news-line {
-    width: 200px ;
-}
-.news-img {
-    overflow: hidden;
-}
-.news-imege {
-    transform: scale(1.1);
-    transition: 1s;
-}
-#news-box:hover .news-imege {
-    transform: scale(1.25);
-}
-
-#stopbtn1,
-#stopbtn2,
-#stopbtn3,
-#stopbtn4 {
-    display: none;
-}
 /* ///////////////////////////////////////// */
 .carding , .front , .back {
     width: 20rem !important;
@@ -253,57 +250,93 @@ textarea:focus {
     /* transform: rotateX(20deg); */
     filter: blur(0px);
 }
+.cardRate {
+    user-select: none;
+    color: gold;
+}
+/* //////////////////////////////////////// */
+#news-box {
+    overflow: hidden;
+}
+#news-line {
+    height: 5px;
+    width: 1%;
+    transition: 1s;
+}
+#news-box:hover #news-line {
+    width: 200px ;
+}
+.news-img {
+    overflow: hidden;
+    width: 37.5% !important;
+}
+.news-img-r {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+}
+.news-img-l{
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
 
+}
+.img-box {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: -50px;
 
+}
+.news-imege {
+    transition: all 1s;
+    overflow: hidden;
+}
+#news-box:hover .news-imege {
+    transform: scale(1.2);
+}
 
+/* \\\\\\\\\\\\\\\\\\    link Cards    \\\\\\\\\\\\\\\\\\\\\\ */
+.link-card {
+    border: none !important;
+    transition: 0.5s;
+}
+.link-card:hover {
+    box-shadow: 0 0 10px 2px rgb(52, 86, 113) !important;
+    z-index: 2;
+}
+.link-card::after {
+    content: "" ;
+    width: 0%; 
+    height: 0%;
+    clip-path: circle(77.8% at 22% 22%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00000020;
+    opacity: 0;
+    transition:  cubic-bezier(0.9, 0.8, 0, 0.1) 0.3s;
+}
+.link-card:hover::after {
+    transition: 0.2s;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    opacity: 1;
+    background-color: #e5e4fa23;
+    width: 100%; 
+    height: 100%;
+    /* transform: scale(1); */
 
-    /* \\\\\\\\\\\\\\\\\\    link Cards    \\\\\\\\\\\\\\\\\\\\\\ */
-    .link-card {
-        border: none !important;
-        transition: 0.5s;
-    }
-    .link-card:hover {
-        box-shadow: 0 0 10px 2px rgb(52, 86, 113) !important;
-        z-index: 2;
-    }
-    .link-card::after {
-        content: "" ;
-        width: 0%; 
-        height: 0%;
-        clip-path: circle(77.8% at 22% 22%);
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: #00000020;
-        opacity: 0;
-        transition:  cubic-bezier(0.9, 0.8, 0, 0.1) 0.3s;
-    }
-    .link-card:hover::after {
-        transition: 0.2s;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        opacity: 1;
-        background-color: #e5e4fa23;
-        width: 100%; 
-        height: 100%;
-        /* transform: scale(1); */
-    
-    }  
-
-    .link-card-img{
-        filter: brightness(1);
-        transition: 2s;
-    }
-    .link-card:hover .link-card-img {
-        transition: 2s;
-        filter: brightness(1.1);
-        filter: drop-shadow(0px 5px 5px #100361);
-
-    } 
-    
+}  
+.link-card-img{
+    filter: brightness(1);
+    transition: 2s;
+}
+.link-card:hover .link-card-img {
+    transition: 2s;
+    filter: brightness(1.1);
+    filter: drop-shadow(0px 5px 5px #100361);
+} 
 
     /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
     footer {
         user-select: none;
+        overflow: hidden;
     }
     .footer-card{
         height: 300px;
@@ -316,25 +349,25 @@ textarea:focus {
 
     /* //////////////////////////////////////////// */
 
-    @media  (max-width: 990px) {
+
+
+
+    @media  (max-width: 991px) {
         .carousel-item img {
             height: 550px !important;
         }
         .empty-container {
             background-position: -200px;
         }
-    
-        #news-box {
-    
-        }
+
         .news-img {
-            
+            width: 100% !important;
             background-position: 0px -50px !important;
             background-position-y: top;
             background-size: cover !important;
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important;
-            height: 200px;
-            max-height: 200px;
+            height: 280px;
+            max-height:280px;
     
         }
         .news-text{
@@ -351,15 +384,16 @@ textarea:focus {
             width: 50% ;
         }
         .news-date {
-            font-size: 10px;
+            font-size: 13px;
         }
     
-/*     
-        #news-box:hover video {
-        transform: scale(1);
-    
+        .news-text div h2 {
+            font-size: 22px;
         }
-     */
+        .news-paragraph {
+            font-size: 14px;
+        }
+
         footer .footer-card {
             width: 22rem ;
         }
@@ -373,15 +407,8 @@ textarea:focus {
     /* ***************************************** */
     @media  (min-width: 992px) {
         
-        .news-img {
-            width: 35% !important;
-            min-height: 300px; 
-            max-height: 450px;
-        }
-    
-        #news-box:hover video {
-            scale: 1.7;
-        }
+  
+
         .news-text {
             padding: 5em !important;
         }
@@ -389,4 +416,15 @@ textarea:focus {
             width: 28rem ;
         }  
     
+    }
+
+    @media (992px <= width <= 1192px) {
+        #news-box {
+            height: 600px;
+            max-height: 650px;
+        }
+        .news-img {
+            width: 90% !important;
+        }
+        
     }

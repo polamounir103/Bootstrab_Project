@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/style.css">
     <link href="https://cdn.jsdelivr.xyz/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <title>Bootstrap Project</title>
 
 </head>
 <body>
@@ -19,7 +22,7 @@
         <a class="navbar-brand " href="#">
           <img src="imges/page-Logo.png" class="rounded" alt="" width="50" height="50">
         </a>
-        <a class="navbar-brand fw-bolder fs-2 " href="#" style="background: -webkit-linear-gradient( rgb(51, 190, 236) 31%, #013b49 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">DooN</a>
+        <a class="navbar-brand fw-bolder fs-2 " href="#" style="font-family: 'Luckiest Guy', cursive; background: -webkit-linear-gradient( rgb(51, 190, 236) 31%, #013b49 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">DooN</a>
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
@@ -36,7 +39,7 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Stations
+              Stores
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background: #ffffffaa;">
               <li><a class="dropdown-item" href="#">Cairo</a></li>
@@ -115,16 +118,16 @@
    <div> 
      <button class="btn btn-dark position-fixed py-3" style="top: 50%; right: 0; z-index: 5; transform: translate(0 ,-50%);" id="menu-btn" ><</button>
      <div class="rounded flex-column p-3 position-fixed top-50 end-0 text-center shadow-lg" id="side-menu"  >
-       <a href="#"  class="d-block my-3 text-dark"><i class="fa-brands fa-facebook-f menu-icon"></i></a>
-       <a href="#"  class="d-block my-3 text-dark"><i class="fa-brands fa-instagram menu-icon"></i></a>
-       <a href="#"  class="d-block my-3 text-dark"><i class="fa-brands fa-twitter menu-icon"></i></a>
-       <a href="#"  class="d-block my-3 text-dark"><i class="fa-regular fa-paper-plane menu-icon"></i></a>
-       <a href="#"  class="d-block my-3 text-dark"><i class="fa-regular fa-envelope menu-icon"></i></a>
-       <a class="fs-2  text-dark"  id="menu-btn-close"><i class="fa-solid fa-circle-xmark menu-icon"></i></a>
+       <a href="#"  class="d-block my-3 text-dark side-menu-link"><i class="fa-brands fa-facebook-f menu-icon d-block "></i></a>
+       <a href="#"  class="d-block my-3 text-dark side-menu-link"><i class="fa-brands fa-instagram menu-icon d-block "></i></a>
+       <a href="#"  class="d-block my-3 text-dark side-menu-link"><i class="fa-brands fa-twitter menu-icon d-block "></i></a>
+       <a href="#"  class="d-block my-3 text-dark side-menu-link"><i class="fa-regular fa-paper-plane menu-icon d-block "></i></a>
+       <a href="#"  class="d-block my-3 text-dark side-menu-link"><i class="fa-regular fa-envelope menu-icon d-block "></i></a>
+       <a class="fs-2 my-3 text-dark side-menu-link"  id="menu-btn-close"><i class="fa-solid fa-circle-xmark menu-icon d-block "></i></a>
       </div>
    </div>
     <!-- >>>>>>>>> Main Section <<<<<<<<<<<<<<<<<<  -->
-    <div class="" >
+    <div class="" style="font-family: 'Caudex', serif;" >
 
       <div id="carouselExampleCaptions" class="carousel slide position-relative" data-bs-ride="carousel" >
         <div class="carousel-indicators">
@@ -402,7 +405,7 @@
                 <div class="w-100 pe-5 d-flex justify-content-between position-absolute item-add-rate ">  
                     
                   <a href="#" class="btn btn-primary">Add</a>             
-                  <div class="cardRate1 mb-2">
+                  <div class="cardRate1 mb-2 cardRate" >
                     <i class="fa-regular fa-star star1" id="star1"  onclick="star1('.cardRate1 .star1' , '.cardRate1 .star2' , '.cardRate1 .star3' , '.cardRate1 .star4' , '.cardRate1 .star5')"></i>
                     <i class="fa-regular fa-star star2" id="star2"  onclick="star2('.cardRate1 .star1' , '.cardRate1 .star2' , '.cardRate1 .star3' , '.cardRate1 .star4' , '.cardRate1 .star5')"></i>
                     <i class="fa-regular fa-star star3" id="star3"  onclick="star3('.cardRate1 .star1' , '.cardRate1 .star2' , '.cardRate1 .star3' , '.cardRate1 .star4' , '.cardRate1 .star5')"></i>
@@ -471,7 +474,7 @@
                   <div class="w-100 pe-5 d-flex justify-content-between position-absolute item-add-rate ">  
                     
                     <a href="#" class="btn btn-primary">Add</a>             
-                    <div class="cardRate2 mb-2">
+                    <div class="cardRate2 mb-2 cardRate">
                       <i class="fa-regular fa-star star1" id="star1"  onclick="star1('.cardRate2 .star1' , '.cardRate2 .star2' , '.cardRate2 .star3' , '.cardRate2 .star4' , '.cardRate2 .star5')"></i>
                       <i class="fa-regular fa-star star2" id="star2"  onclick="star2('.cardRate2 .star1' , '.cardRate2 .star2' , '.cardRate2 .star3' , '.cardRate2 .star4' , '.cardRate2 .star5')"></i>
                       <i class="fa-regular fa-star star3" id="star3"  onclick="star3('.cardRate2 .star1' , '.cardRate2 .star2' , '.cardRate2 .star3' , '.cardRate2 .star4' , '.cardRate2 .star5')"></i>
@@ -540,7 +543,7 @@
                 <div class="w-100 pe-5 d-flex justify-content-between position-absolute item-add-rate ">  
                     
                   <a href="#" class="btn btn-primary">Add</a>             
-                  <div class="cardRate3 mb-2">
+                  <div class="cardRate3 mb-2 cardRate">
                     <i class="fa-regular fa-star star1" id="star1"  onclick="star1('.cardRate3 .star1' , '.cardRate3 .star2' , '.cardRate3 .star3' , '.cardRate3 .star4' , '.cardRate3 .star5')"></i>
                     <i class="fa-regular fa-star star2" id="star2"  onclick="star2('.cardRate3 .star1' , '.cardRate3 .star2' , '.cardRate3 .star3' , '.cardRate3 .star4' , '.cardRate3 .star5')"></i>
                     <i class="fa-regular fa-star star3" id="star3"  onclick="star3('.cardRate3 .star1' , '.cardRate3 .star2' , '.cardRate3 .star3' , '.cardRate3 .star4' , '.cardRate3 .star5')"></i>
@@ -608,7 +611,7 @@
                 <div class="w-100 pe-5 d-flex justify-content-between position-absolute item-add-rate ">  
                     
                   <a href="#" class="btn btn-primary">Add</a>             
-                  <div class="cardRate4 mb-2">
+                  <div class="cardRate4 mb-2 cardRate">
                     <i class="fa-regular fa-star star1" id="star1"  onclick="star1('.cardRate4 .star1' , '.cardRate4 .star2' , '.cardRate4 .star3' , '.cardRate4 .star4' , '.cardRate4 .star5')"></i>
                     <i class="fa-regular fa-star star2" id="star2"  onclick="star2('.cardRate4 .star1' , '.cardRate4 .star2' , '.cardRate4 .star3' , '.cardRate4 .star4' , '.cardRate4 .star5')"></i>
                     <i class="fa-regular fa-star star3" id="star3"  onclick="star3('.cardRate4 .star1' , '.cardRate4 .star2' , '.cardRate4 .star3' , '.cardRate4 .star4' , '.cardRate4 .star5')"></i>
@@ -676,7 +679,7 @@
                 <div class="w-100 pe-5 d-flex justify-content-between position-absolute item-add-rate ">  
                     
                   <a href="#" class="btn btn-primary">Add</a>             
-                  <div class="cardRate5 mb-2">
+                  <div class="cardRate5 mb-2 cardRate">
                     <i class="fa-regular fa-star star1" id="star1"  onclick="star1('.cardRate5 .star1' , '.cardRate5 .star2' , '.cardRate5 .star3' , '.cardRate5 .star4' , '.cardRate5 .star5')"></i>
                     <i class="fa-regular fa-star star2" id="star2"  onclick="star2('.cardRate5 .star1' , '.cardRate5 .star2' , '.cardRate5 .star3' , '.cardRate5 .star4' , '.cardRate5 .star5')"></i>
                     <i class="fa-regular fa-star star3" id="star3"  onclick="star3('.cardRate5 .star1' , '.cardRate5 .star2' , '.cardRate5 .star3' , '.cardRate5 .star4' , '.cardRate5 .star5')"></i>
@@ -744,7 +747,7 @@
                 <div class="w-100 pe-5 d-flex justify-content-between position-absolute item-add-rate ">  
                     
                   <a href="#" class="btn btn-primary">Add</a>             
-                  <div class="cardRate6 mb-2">
+                  <div class="cardRate6 mb-2 cardRate">
                     <i class="fa-regular fa-star star1" id="star1"  onclick="star1('.cardRate6 .star1' , '.cardRate6 .star2' , '.cardRate6 .star3' , '.cardRate6 .star4' , '.cardRate6 .star5')"></i>
                     <i class="fa-regular fa-star star2" id="star2"  onclick="star2('.cardRate6 .star1' , '.cardRate6 .star2' , '.cardRate6 .star3' , '.cardRate6 .star4' , '.cardRate6 .star5')"></i>
                     <i class="fa-regular fa-star star3" id="star3"  onclick="star3('.cardRate6 .star1' , '.cardRate6 .star2' , '.cardRate6 .star3' , '.cardRate6 .star4' , '.cardRate6 .star5')"></i>
@@ -812,7 +815,7 @@
                 <div class="w-100 pe-5 d-flex justify-content-between position-absolute item-add-rate ">  
                     
                   <a href="#" class="btn btn-primary">Add</a>             
-                  <div class="cardRate7 mb-2">
+                  <div class="cardRate7 mb-2 cardRate">
                     <i class="fa-regular fa-star star1" id="star1"  onclick="star1('.cardRate7 .star1' , '.cardRate7 .star2' , '.cardRate7 .star3' , '.cardRate7 .star4' , '.cardRate7 .star5')"></i>
                     <i class="fa-regular fa-star star2" id="star2"  onclick="star2('.cardRate7 .star1' , '.cardRate7 .star2' , '.cardRate7 .star3' , '.cardRate7 .star4' , '.cardRate7 .star5')"></i>
                     <i class="fa-regular fa-star star3" id="star3"  onclick="star3('.cardRate7 .star1' , '.cardRate7 .star2' , '.cardRate7 .star3' , '.cardRate7 .star4' , '.cardRate7 .star5')"></i>
@@ -878,7 +881,7 @@
                 <div class="w-100 pe-5 d-flex justify-content-between position-absolute item-add-rate ">  
                     
                   <a href="#" class="btn btn-primary">Add</a>             
-                  <div class="cardRate8 mb-2">
+                  <div class="cardRate8 mb-2  cardRate">
                     <i class="fa-regular fa-star star1" id="star1"  onclick="star1('.cardRate8 .star1' , '.cardRate8 .star2' , '.cardRate8 .star3' , '.cardRate8 .star4' , '.cardRate8 .star5')"></i>
                     <i class="fa-regular fa-star star2" id="star2"  onclick="star2('.cardRate8 .star1' , '.cardRate8 .star2' , '.cardRate8 .star3' , '.cardRate8 .star4' , '.cardRate8 .star5')"></i>
                     <i class="fa-regular fa-star star3" id="star3"  onclick="star3('.cardRate8 .star1' , '.cardRate8 .star2' , '.cardRate8 .star3' , '.cardRate8 .star4' , '.cardRate8 .star5')"></i>
@@ -988,63 +991,51 @@
       <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
       <hr>
       <!-- >>>>>>>>>>>>> 9th <<<<<<<<<<<<<<<< -->
-      <section class="container mb-5">
+  <section class="container mb-5">
         <div class="container-fluid  justify-content-center text-center mt-5 bg-light">
           <p class="fs-2 fw-bolder ">Breaking News</p>
         </div>
         
-        <div class="d-flex  bg-light flex-column-reverse flex-lg-row  mb-5 pb-3"  id="news-box">
+        <div class="d-flex  bg-light flex-column-reverse flex-lg-row  mb-5 "  id="news-box">
           <div class="container  news-text">
-            <div class="d-flex flex-row flex-lg-column">
+            <div class="d-flex flex-column">
               <h2>Apple Tests M3 Chip</h2>
-              <p class="mt-3 ms-2 mt-lg-0 ms-lg-0 news-date"> 
+              <p class="news-date"> 
                 <i class="fa-regular fa-newspaper"></i> 
                 <span>Mon May 25 2023</span>
               </p>
             </div>
             <div class="bg-primary mb-3" id="news-line" ></div> <!-- line -->
-            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eum deleniti illo, ducimus, nihil aliquam totam magnam, voluptates maiores reprehenderit non! Cupiditate, doloribus. Explicabo, molestiae. Veniam aut ex ipsam aperiam molestias praesentium? Itaque deserunt nulla ex, soluta minus debitis qui eos fugiat temporibus quod pariatur in optio excepturi harum provident doloremque dolor ipsum sunt praesentium.</p>
+            <p class="news-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eum deleniti illo, ducimus, nihil aliquam totam magnam, voluptates maiores reprehenderit non! Cupiditate, doloribus. Explicabo, molestiae. Veniam aut ex ipsam aperiam molestias praesentium? Itaque deserunt nulla ex, soluta minus debitis qui eos fugiat temporibus quod pariatur in optio excepturi harum provident doloremque dolor ipsum sunt praesentium.
+            </p>
             <div class="d-flex">
               <button class="btn btn-primary me-2">play>></button>
               <button class="btn btn-primary me-2">play>></button>
-              <button class="btn btn-primary me-2"  onclick="changCol('box1' , 'playbtn1' , 'stopbtn1')" id="playbtn1"> play</button>
-              <button class="btn btn-primary"  onclick="stopCol('box1' , 'playbtn1' , 'stopbtn1')"  id="stopbtn1"> Stop</button>
+              <button class="btn btn-primary me-2"> play</button>
             </div>
           </div> <!--  text container -->
 
-          <div class="container-fluid  bg-danger news-img" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
-           background-image: url(imges/apple-news0.jpg);
-           background-size: cover;" id="">
-            <img src="imges/apple-news.jpg"  alt="" class="w-100 h-100 news-imege">
-
-            <!-- <video class="w-100 h-100" controls id="box1" muted>
-              <source src="vid/vid1.mp4" type="video/mp4">
-            </video> -->
-            <!-- <img src="imges/apple-news.jpg" alt=""> -->
+          <div class="bg-primary news-img-r news-img " id="b">
+            <div class="img-box" style="background-image: url(imges/apple-news.jpg);">
+              <img src="imges/apple-news.jpg"  alt="" class="w-100 h-100 news-imege">
+            </div>
           </div> <!-- img box -->
+
         </div> <!-- container box -->
 <!-- ----------------------------------- -->
 
-        <div class="d-flex  bg-light flex-column flex-lg-row mb-5 pb-3" id="news-box" >
-          <div class="container-fluid  bg-primary news-img" style="clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
-          background-image: url(imges/hp-news00.jpg);
-          background-size: cover; " id="b">
-            <img src="imges/hp-news.jpg"  alt="" class="w-100 h-100 news-imege">
-
-            <!-- <video class="w-100 h-100" controls id="box2" muted>
-              <source src="vid/vid1.mp4" type="video/mp4">
-            </video> -->
-          </div> <!-- img box -->
+        <div class="d-flex  bg-light flex-column-reverse flex-lg-row-reverse mb-5" id="news-box" >
           <div class="container  news-text">
-            <div class="d-flex flex-row flex-lg-column">
+            <div class="d-flex flex-column">
               <h2>4 New HP laptops</h2>
-              <p class="mt-3 ms-2 mt-lg-0 ms-lg-0 news-date"> 
+              <p class="news-date"> 
                 <i class="fa-regular fa-newspaper"></i> 
                 <span>Mon May 25 2023</span>
               </p>
             </div>
             <div class="bg-primary mb-3" id="news-line" ></div> <!-- line -->
-            <p class="">
+            <p class="news-paragraph">
               HP today announced 4 new laptops  as part of its Pavilion Plus lineup, saying that they target Gen Zs and millennials. The laptops are equipped with 13th Gen Intel Core processors and bring along improved performance, design, and security features.
 
               The four models are HP Pavilion Plus 14, Pavilion x360, HP 14, and HP 15. Here’s everything you need to know about them
@@ -1052,83 +1043,79 @@
             <div class="d-flex">
               <button class="btn btn-primary me-2">play>></button>
               <button class="btn btn-primary me-2">play>></button>
-              <button class="btn btn-primary me-2"  
-              onclick="changCol('box2' , 'playbtn2' , 'stopbtn2')" id="playbtn2"> play</button>
-              <button class="btn btn-primary "  
-              onclick="stopCol('box2' , 'playbtn2' , 'stopbtn2')"  id="stopbtn2"> Stop</button>
+              <button class="btn btn-primary me-2"> play</button>
+
             </div>
           </div> <!--  text container -->
+
+          <div class="bg-primary news-img-l news-img " id="b">
+            <div class="img-box" style="background-image: url(imges/hp-news.jpg);">
+              <img src="imges/hp-news.jpg"  alt="" class="w-100 h-100 news-imege">
+            </div>
+          </div> <!-- img box -->
+
         </div> <!-- container box -->
         <!-- --------------------------------------- -->
 
-        <div class="d-flex  bg-light flex-column-reverse flex-lg-row mb-5 pb-3" id="news-box">
+        <div class="d-flex  bg-light flex-column-reverse flex-lg-row mb-5" id="news-box">
           <div class="container news-text" >
-            <div class="d-flex flex-row flex-lg-column">
+            <div class="d-flex flex-column">
               <h2>360 Rotating screen</h2>
-              <p class="mt-3 ms-2 mt-lg-0 ms-lg-0 news-date"> 
+              <p class="news-date"> 
                 <i class="fa-regular fa-newspaper"></i> 
                 <span>Mon May 25 2023</span>
               </p>
             </div>
             <div class=" bg-primary mb-3" id="news-line"  ></div> <!-- line -->
-            <p class="">
+            <p class="news-paragraph">
               Since its inception in 2020, ThinkBook Plus has become a synonym for unique and innovative SMB devices including ThinkBook Plus Gen 2 with e-Ink display and Gen 3 with a secondary 8-inch display beside the keyboard. Lenovo has a long history of innovation with twist form factors dating back to 2005 with the ThinkPad™ X41 tablet and later the ThinkPad Twist from 2012. The new ThinkBook Plus Twist reinvents the category by integrating an innovative rotating dual display that offers multimode versatility while enhancing the user experience in multiple areas that has created a unique laptop for a new generation.
             </p>
             <div class="d-flex">
               <button class="btn btn-primary me-2">play>></button>
               <button class="btn btn-primary me-2">play>></button>
-              <button class="btn btn-primary me-2"  
-              onclick="changCol('box3' , 'playbtn3' , 'stopbtn3')" id="playbtn3"> play</button>
-              <button class="btn btn-primary"  
-              onclick="stopCol('box3' , 'playbtn3' , 'stopbtn3')"  id="stopbtn3"> Stop</button>
+              <button class="btn btn-primary me-2" > play</button>
             </div>
           </div> <!--  text container -->
 
-          <div class="container-fluid  bg-warning news-img" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
-          background-image: url(imges/lenovo-news00.png);
-          background-size: cover;" id="">
-            <img src="imges/lenovo-news.png"  alt="" class="w-100 h-100 news-imege">
-
-            <!-- <video class="w-100 h-100" controls id="box3"  muted>
-              <source src="vid/vid1.mp4" type="video/mp4">
-            </video> -->
+          <div class="bg-primary news-img-r news-img"  id="b">
+            <div class="img-box" style="background-image: url(imges/lenovo-news.png);">
+              <img src="imges/lenovo-news.png"  alt="" class="w-100 h-100 news-imege">
+            </div>
           </div> <!-- img box -->
+
         </div> <!-- container box -->
 <!-- ----------------------------------- -->
 
-<div class="d-flex  bg-light flex-column flex-lg-row mb-5 pb-3" id="news-box" >
-  <div class="container-fluid  bg-primary news-img" style="clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
-  background-image: url(imges/Dell-news00.jpg); " id="b">
-    <!-- <video class="" controls id="box4" muted>
-      <source src="vid/New project.mp4" type="video/mp4">
-    </video> -->
+<div class="d-flex  bg-light flex-column-reverse flex-lg-row-reverse mb-5" id="news-box" >
 
-    <img src="imges/Dell-news.jpg"  alt="" class="w-100 h-100 news-imege">
-  </div> <!-- img box -->
   <div class="container news-text" >
-    <div class="d-flex flex-row flex-lg-column">
+    <div class="d-flex flex-column">
       <h2 class="">New Alienware Gen</h2>    
-      <p class="mt-3 ms-2 mt-lg-0 ms-lg-0 news-date"> 
+      <p class="news-date"> 
         <i class="fa-regular fa-newspaper"></i> 
         <span>Mon May 25 2023</span>
       </p>
     </div>
     <div class="bg-primary" id="news-line" ></div> <!-- line -->
-    <p class="">
+    <p class="news-paragraph">
     Dell Alienware M18 was originally unveiled earlier in the year at Consumer Electronics Show (CES) 2024 in Las Vegas. The new M18 comes with 165Hz QHD with Dynamic Display Switching technology, and G-SYNC and FreeSync support. All are fortified by structural improvements inside and out that enable a stronger and more rigid chassis.
     </p>
     <div class="d-flex">
       <button class="btn btn-primary me-2">play>></button>
       <button class="btn btn-primary me-2">play>></button>
-      <button class="btn btn-primary me-2"  
-      onclick="changCol('box4' , 'playbtn4' , 'stopbtn4')" id="playbtn4"> play</button>
-      <button class="btn btn-primary "  
-      onclick="stopCol('box4' , 'playbtn4' , 'stopbtn4')"  id="stopbtn4"> Stop</button>
+      <button class="btn btn-primary me-2"> play</button>
     </div>
   </div> <!--  text container -->
+
+  <div class="bg-primary news-img-l news-img " id="b">
+    <div class="img-box" style="background-image: url(imges/Dell-news.jpg);">
+      <img src="imges/Dell-news.jpg"  alt="" class="w-100 h-100 news-imege">
+    </div>
+  </div> <!-- img box -->
+
 </div> <!-- container box -->
 
-      </section>
+</section>
       <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
       <hr>
       <!-- >>>>>>>>>>>>> 10th <<<<<<<<<<<<<<<< -->
@@ -1186,9 +1173,9 @@
               <p class="fs-5 pt-3">Basic Info</p>
             </div><!-- card top -->
             <div class="card-bottom d-flex flex-column align-items-center text-start pt-3">
-              <p class="fw-bold">Tel : 000000000000</p>
-              <p class="fw-bold">Fax : 000-000-000</p>
-              <p class="fw-bold">Address : Egypt</p>
+              <p class="fw-bold"><a href=""> <i class="fa-solid fa-tty"></i>  Tel : 000000000000</a></p>
+              <p class="fw-bold"><a href=""><i class="fa-solid fa-fax"></i>  Fax : 000-000-000</a></p>
+              <p class="fw-bold"><a href=""><i class="fa-solid fa-location-dot"></i>  Address : Egypt</a></p>
             </div> <!-- card bottom -->
           </div><!-- card -->
           <!-- -----------------------------? -->
@@ -1198,9 +1185,9 @@
               <p class="fs-5 pt-3">Important Links</p>
             </div><!-- card top -->
             <div class="card-bottom d-flex flex-column align-items-center text-start pt-3">
-              <p class="fw-bold"><a  onclick="showMenu()" style="cursor: pointer;"> Visit Us</a></p>
-              <p class="fw-bold"><a href="">Take A Look</a></p>
-              <p class="fw-bold"><a href="">Make A Suggestion</a></p>
+              <p class="fw-bold"><a  onclick="showMenu()" style="cursor: pointer;"> <i class="fa-solid fa-door-open"></i>  Visit Us</a></p>
+              <p class="fw-bold"><a href=""> <i class="fa-solid fa-eye"></i>  Take A Look</a></p>
+              <p class="fw-bold"><a href=""><i class="fa-solid fa-pen-to-square"></i>   Make A Suggestion</a></p>
             </div> <!-- card bottom -->
           </div><!-- card -->
           <!-- -----------------------------? -->
@@ -1210,18 +1197,18 @@
               <p class="fs-5 pt-3">Our Vision</p>
             </div><!-- card top -->
             <div class="card-bottom d-flex flex-column align-items-center text-start pt-3">
-              <p class="fw-bold">Best Services For All </p>
-              <p class="fw-bold">Offer The Best Price</p>
-              <p class="fw-bold">Follow Up After Buying</p>
+              <p class="fw-bold"><i class="fa-solid fa-people-group"></i>  Best Services For All </p>
+              <p class="fw-bold"><i class="fa-solid fa-money-bill-wave"></i> Offer The Best Price</p>
+              <p class="fw-bold"><i class="fa-solid fa-hand-holding-medical"></i> Follow Up After Buying</p>
             </div> <!-- card bottom -->
           </div><!-- card -->
           <!-- -----------------------------? -->
         </div>
         <div class="text-center border-top border-bottom border-5 pt-2 ">
-          <p>copyrights Is Reserved &copy;Pola_Mounir</p>
+          <p>copyrights Is Reserved <i class="fa-solid fa-copyright"></i> Pola_Mounir</p>
         </div>
 
-
+        <!-- &copy; -->
       </footer>
 
 

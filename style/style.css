@@ -5,7 +5,6 @@
 }
 
 body {
-    /* perspective: 600px;  */
     font-family: 'Caudex', serif !important; 
     background: black;
 }
@@ -27,7 +26,6 @@ body {
     height: 700px !important;
     top: 0% !important;
     left: 0% !important;
-
     
 }
 
@@ -69,7 +67,6 @@ hr {
     display: block;
     width: 50px !important;
     padding: 10px 0;
-    /* background-color: #00ffbf; */
     font-size: 26px;
     color: #0c0c0c;
     
@@ -78,7 +75,6 @@ hr {
 #side-menu:hover .menu-icon:not(:hover) {
     transition: 0.2;
     filter: blur(0.7px);
-    
 }
 
 .menu-icon:hover {
@@ -151,10 +147,6 @@ textarea:focus {
    transition: ease-in 0.8s ; 
 }
 
-/* .carousel {
-    transition: 2s;
-} */
-
 .front .carousel::before {
     content: '';
     position: absolute;
@@ -200,8 +192,6 @@ textarea:focus {
     transition: 0.5s;
     overflow: hidden;
     background-color: #dedede;
-    /* border: 1px solid rgb(166, 166, 166); */
-
  }
  .front:hover {
     transition: 0.3s;
@@ -244,14 +234,11 @@ textarea:focus {
 .best-card:hover {
     filter: blur(0px);
     transform: scale(1.05);
-    /* border: 2px solid rgb(52, 62, 77); */
     border-radius: 10px !important;
     box-shadow: 0 10px 10px 5px rgba(1, 39, 89, 0.6) !important;
-    /* transform: rotateX(20deg); */
     filter: blur(0px);
 }
 .cardRate {
-    user-select: none;
     color: #ffaa00;
 }
 /* //////////////////////////////////////// */
@@ -290,6 +277,18 @@ textarea:focus {
 }
 #news-box:hover .news-imege {
     transform: scale(1.2);
+}
+
+.news-btn {
+    background-color: #cadbee !important;
+}
+.news-btn:hover {
+    background-color: #00264b3e !important;
+}
+.news-btn:active {
+    background-color: #00264b3e !important;
+    box-shadow: 0px 5px 5px 1px rgba(2, 129, 219, 0.842);
+    border-color: #0157b4 !important;
 }
 
 /* \\\\\\\\\\\\\\\\\\    link Cards    \\\\\\\\\\\\\\\\\\\\\\ */
@@ -334,8 +333,7 @@ textarea:focus {
 } 
 
     /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-    footer {
-        user-select: none;
+    footer{
         overflow: hidden;
     }
     .footer-card{
@@ -348,7 +346,10 @@ textarea:focus {
     }
 
     /* //////////////////////////////////////////// */
-
+    footer,.link-card ,.best-card,.cardRate  , .front{
+        user-select: none;
+    }
+    /* ========================================= */
 
 
 
